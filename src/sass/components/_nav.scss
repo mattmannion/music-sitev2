@@ -1,17 +1,24 @@
-.nav__container {
-  margin: 2rem 5rem;
-
-}
-
 .nav-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
+  margin: 2rem $side-margin;
+  @include betweenFlex;
+  margin-bottom: 2.5rem;
+
+  &__search {
+    font-size: 2rem;
+    border: $black 1px solid;
+    border-radius: 0;
+    outline: none;
+  }
 }
 
 .nav-bot {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-size: 1.5rem;
+  border-top: #ccc 1px solid;
+  border-bottom: #ccc 1px solid;
+  margin-bottom: 2rem;
+
+  &__container {
+    margin: .5rem $side-margin;
+    @include betweenFlex;
+  }
 }

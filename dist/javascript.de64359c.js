@@ -46009,7 +46009,9 @@ function nav() {
     placeholder: "search"
   }), /*#__PURE__*/_react.default.createElement("div", null, "1 (123) 456-7890"), /*#__PURE__*/_react.default.createElement("div", null, "Login"), /*#__PURE__*/_react.default.createElement("div", null, "Sign-up"), /*#__PURE__*/_react.default.createElement("div", null, "Cart")), /*#__PURE__*/_react.default.createElement("nav", {
     className: "nav-bot"
-  }, /*#__PURE__*/_react.default.createElement("div", null, "category"), /*#__PURE__*/_react.default.createElement("div", null, "new items"), /*#__PURE__*/_react.default.createElement("div", null, "on sale"), /*#__PURE__*/_react.default.createElement("div", null, "news"), /*#__PURE__*/_react.default.createElement("div", null, "support"), /*#__PURE__*/_react.default.createElement("div", null, "more"))));
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "nav-bot__container"
+  }, /*#__PURE__*/_react.default.createElement("div", null, "category"), /*#__PURE__*/_react.default.createElement("div", null, "new items"), /*#__PURE__*/_react.default.createElement("div", null, "on sale"), /*#__PURE__*/_react.default.createElement("div", null, "news"), /*#__PURE__*/_react.default.createElement("div", null, "support"), /*#__PURE__*/_react.default.createElement("div", null, "more")))));
 }
 },{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js"}],"../javascript/home/home.jsx":[function(require,module,exports) {
 "use strict";

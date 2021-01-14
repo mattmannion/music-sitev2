@@ -20,12 +20,14 @@ export default function nav() {
           <div>Cart</div>
         </nav>
         <nav className='nav-bot'>
-          <div>category</div>
-          <div>new items</div>
-          <div>on sale</div>
-          <div>news</div>
-          <div>support</div>
-          <div>more</div>
+          <div className='nav-bot__container'>
+            <div>category</div>
+            <div>new items</div>
+            <div>on sale</div>
+            <div>news</div>
+            <div>support</div>
+            <div>more</div>
+          </div>
         </nav>
       </div>
     </>

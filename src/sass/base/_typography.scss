@@ -11,6 +11,24 @@ html {
 
 body {
   font-size: 2rem;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: 1rem;
+}
+
+a {
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $black;
+  }
+
+  &:active,
+  &:hover {
+    color: rgba($black, 0.75);
+  }
 }
 
 // optional media queries
