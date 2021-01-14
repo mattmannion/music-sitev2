@@ -3,7 +3,9 @@ import { Link, withRouter } from 'react-router-dom';
 
 const Product = () => (
   <>
-    <Link to='/'>To Home</Link>
+    <div className='product'>
+      <Link to='/'>To Home</Link>
+    </div>
   </>
 );
 

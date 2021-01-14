@@ -45996,7 +45996,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function nav() {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
-    className: "nav__container"
+    className: "nav"
   }, /*#__PURE__*/_react.default.createElement("nav", {
     className: "nav-top"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -46027,9 +46027,11 @@ var _reactRouterDom = require("react-router-dom");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const home = () => /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+const home = () => /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+  className: "home"
+}, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
   to: "/product"
-}, "To Product");
+}, "To Product")));
 
 var _default = (0, _reactRouterDom.withRouter)(home);
 
@@ -46048,9 +46050,11 @@ var _reactRouterDom = require("react-router-dom");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const Product = () => /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+const Product = () => /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+  className: "product"
+}, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
   to: "/"
-}, "To Home"));
+}, "To Home")));
 
 var _default = (0, _reactRouterDom.withRouter)(Product);
 
@@ -46061,7 +46065,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.default = footer;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -46069,12 +46073,26 @@ var _reactRouterDom = require("react-router-dom");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const footer = () => {
-  return /*#__PURE__*/_react.default.createElement("div", null, "footer");
-};
-
-var _default = footer;
-exports.default = _default;
+function footer() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("footer", {
+    className: "footer"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "footer__container"
+  }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "footer__logo",
+    to: "/"
+  }, "Logo"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "footer__hero"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "footer__column"
+  }, /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "footer__column"
+  }, /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "footer__column"
+  }, /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "footer__column"
+  }, /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"))))));
+}
 },{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js"}],"../javascript/index.jsx":[function(require,module,exports) {
 "use strict";
 
@@ -46142,7 +46160,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54662" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57515" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

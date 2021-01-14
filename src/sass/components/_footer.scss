@@ -1,0 +1,22 @@
+.footer {
+  padding: 2rem;
+  background-color: $dark-main;
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: 5rem;
+  }
+
+  &__hero {
+    @include centerFlex;
+  }
+
+  &__column {
+    margin: 2rem 2rem;
+  }
+}

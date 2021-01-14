@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function nav() {
   return (
     <>
-      <div className='nav__container'>
+      <div className='nav'>
         <nav className='nav-top'>
           <div className='nav-top__logo'>
             <Link to='/'>Logo</Link>

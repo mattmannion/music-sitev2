@@ -1,24 +1,36 @@
-.nav-top {
-  margin: 2rem $side-margin;
-  @include betweenFlex;
-  margin-bottom: 2.5rem;
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: $white;
 
-  &__search {
-    font-size: 2rem;
-    border: $black 1px solid;
-    border-radius: 0;
-    outline: none;
-  }
-}
-
-.nav-bot {
-  font-size: 1.5rem;
-  border-top: #ccc 1px solid;
-  border-bottom: #ccc 1px solid;
-  margin-bottom: 2rem;
-
-  &__container {
-    margin: .5rem $side-margin;
+  &-top {
+    margin: 2rem $side-margin;
     @include betweenFlex;
+    flex-flow: wrap;
+    margin-bottom: 2.5rem;
+
+    &__search {
+      font-size: 2rem;
+      border: $black 1px solid;
+      border-radius: 0;
+      outline: none;
+      min-width: 25%;
+    }
+  }
+
+  &-bot {
+    font-size: 1.5rem;
+    border-top: #ccc 1px solid;
+    border-bottom: #ccc 1px solid;
+    margin-bottom: 2rem;
+
+    &__container {
+      @include betweenFlex;
+      flex-flow: wrap;
+      margin: .5rem $side-margin;
+    }
   }
 }
