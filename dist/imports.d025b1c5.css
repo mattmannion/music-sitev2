@@ -43,6 +43,10 @@ a {
     align-items: center;
     flex-flow: wrap;
     margin-bottom: 2.5rem; }
+    .nav-top__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
     .nav-top__search {
       font-size: 2rem;
       border: #000 1px solid;
@@ -69,7 +73,10 @@ a {
     justify-content: space-evenly;
     align-items: center; }
   .footer__logo {
-    font-size: 5rem; }
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .footer__hero {
     display: flex;
     justify-content: center;
@@ -78,7 +85,7 @@ a {
     margin: 2rem 2rem; }
 
 .home {
-  margin-top: 15rem;
+  margin-top: 20rem;
   height: 75vh; }
 
 .product {

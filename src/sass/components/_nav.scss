@@ -12,6 +12,10 @@
     flex-flow: wrap;
     margin-bottom: 2.5rem;
 
+    &__logo {
+      @include centerFlex;
+    }
+
     &__search {
       font-size: 2rem;
       border: $black 1px solid;

@@ -17,6 +17,12 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin centerGrid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
 @mixin boxShadow {
   box-shadow: 1rem 1rem 5rem rgba($black, 0.5);
 }

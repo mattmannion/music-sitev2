@@ -45980,7 +45980,9 @@ if ("development" !== "production") {
     style: _propTypes.default.object
   });
 }
-},{"react-router":"../../node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"../../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"../../node_modules/react/index.js","history":"../../node_modules/history/esm/history.js","prop-types":"../../node_modules/prop-types/index.js","tiny-warning":"../../node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"../../node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"../../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"../../node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"../javascript/static/nav.jsx":[function(require,module,exports) {
+},{"react-router":"../../node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"../../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"../../node_modules/react/index.js","history":"../../node_modules/history/esm/history.js","prop-types":"../../node_modules/prop-types/index.js","tiny-warning":"../../node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"../../node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"../../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"../../node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"../resources/icons/logo-icon/ms-icon-70x70.png":[function(require,module,exports) {
+module.exports = "/ms-icon-70x70.621504ea.png";
+},{}],"../javascript/static/nav.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45992,6 +45994,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
+var _msIcon70x = _interopRequireDefault(require("../../resources/icons/logo-icon/ms-icon-70x70.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function nav() {
@@ -45999,21 +46003,27 @@ function nav() {
     className: "nav"
   }, /*#__PURE__*/_react.default.createElement("nav", {
     className: "nav-top"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "nav-top__logo"
   }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "nav-top__logo",
     to: "/"
-  }, "Logo")), /*#__PURE__*/_react.default.createElement("input", {
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _msIcon70x.default,
+    alt: "Music-site Logo"
+  }), /*#__PURE__*/_react.default.createElement("div", null, "Music site")), /*#__PURE__*/_react.default.createElement("input", {
     className: "nav-top__search",
     type: "search",
     placeholder: "search"
-  }), /*#__PURE__*/_react.default.createElement("div", null, "1 (123) 456-7890"), /*#__PURE__*/_react.default.createElement("div", null, "Login"), /*#__PURE__*/_react.default.createElement("div", null, "Sign-up"), /*#__PURE__*/_react.default.createElement("div", null, "Cart")), /*#__PURE__*/_react.default.createElement("nav", {
+  }), /*#__PURE__*/_react.default.createElement("div", null, "1 (123) 456-7890"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "nav-top__account"
+  }, /*#__PURE__*/_react.default.createElement("div", null, "Login"), /*#__PURE__*/_react.default.createElement("div", null, "Sign-up")), /*#__PURE__*/_react.default.createElement("div", null, "Cart")), /*#__PURE__*/_react.default.createElement("nav", {
     className: "nav-bot"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "nav-bot__container"
-  }, /*#__PURE__*/_react.default.createElement("div", null, "category"), /*#__PURE__*/_react.default.createElement("div", null, "new items"), /*#__PURE__*/_react.default.createElement("div", null, "on sale"), /*#__PURE__*/_react.default.createElement("div", null, "news"), /*#__PURE__*/_react.default.createElement("div", null, "support"), /*#__PURE__*/_react.default.createElement("div", null, "more")))));
+  }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    to: "/product"
+  }, "To Product"), /*#__PURE__*/_react.default.createElement("div", null, "new items"), /*#__PURE__*/_react.default.createElement("div", null, "on sale"), /*#__PURE__*/_react.default.createElement("div", null, "news"), /*#__PURE__*/_react.default.createElement("div", null, "support"), /*#__PURE__*/_react.default.createElement("div", null, "more")))));
 }
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js"}],"../javascript/home/home.jsx":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","../../resources/icons/logo-icon/ms-icon-70x70.png":"../resources/icons/logo-icon/ms-icon-70x70.png"}],"../javascript/home/home.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46059,7 +46069,9 @@ const Product = () => /*#__PURE__*/_react.default.createElement(_react.default.F
 var _default = (0, _reactRouterDom.withRouter)(Product);
 
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js"}],"../javascript/static/footer.jsx":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js"}],"../resources/icons/logo-icon/ms-icon-144x144.png":[function(require,module,exports) {
+module.exports = "/ms-icon-144x144.9d8e9893.png";
+},{}],"../javascript/static/footer.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46071,6 +46083,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
+var _msIcon144x = _interopRequireDefault(require("../../resources/icons/logo-icon/ms-icon-144x144.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function footer() {
@@ -46081,7 +46095,10 @@ function footer() {
   }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
     className: "footer__logo",
     to: "/"
-  }, "Logo"), /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _msIcon144x.default,
+    alt: "Music site logo"
+  }), /*#__PURE__*/_react.default.createElement("div", null, "Music site")), /*#__PURE__*/_react.default.createElement("div", {
     className: "footer__hero"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "footer__column"
@@ -46093,7 +46110,7 @@ function footer() {
     className: "footer__column"
   }, /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"))))));
 }
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js"}],"../javascript/index.jsx":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","../../resources/icons/logo-icon/ms-icon-144x144.png":"../resources/icons/logo-icon/ms-icon-144x144.png"}],"../javascript/index.jsx":[function(require,module,exports) {
 "use strict";
 
 require("core-js/stable");
@@ -46160,7 +46177,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57515" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58534" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
