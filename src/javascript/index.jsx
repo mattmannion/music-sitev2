@@ -7,6 +7,28 @@ import 'regenerator-runtime/runtime';
 // 'async' calls, import when needed
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/app';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// component imports
+import Nav from './static/nav';
+import Home from './home/home';
+import Product from './product/product';
+import Footer from './static/footer';
+
+const Routing = () => (
+  <Router>
+    <Nav />
+    <Switch>
+      <Route exact path='/' component={Home} />
+      <Route path='/product' component={Product} />
+    </Switch>
+    <Footer />
+  </Router>
+);
+
+ReactDOM.render(
+  <>
+    <Routing />
+  </>,
+  document.getElementById('root')
+);

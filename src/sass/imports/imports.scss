@@ -13,9 +13,11 @@
 //// ex: mixins, vars, vendors, ect.../////
 ///////////////////////////////////////////
 
-@import '../utils/mixins';
-@import '../utils/mq_manager';
-@import '../utils/variables';
+@import '../abstracts/mixins';
+@import '../abstracts/mq_manager';
+@import '../abstracts/variables';
 
 @import '../base/reset';
 @import '../base/typography';
+
+@import '../components/nav';
