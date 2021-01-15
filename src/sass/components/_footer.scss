@@ -11,6 +11,7 @@
   &__logo {
     font-size: 5rem;
     @include centerFlex;
+    @include linkTrans;
   }
 
   &__hero {

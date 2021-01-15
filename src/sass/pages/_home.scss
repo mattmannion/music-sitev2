@@ -1,4 +1,12 @@
 .home {
-  margin-top: 20rem;
-  height: 75vh;
+  @include centerFlex;
+  @include verticalPageMargin;
+
+  &__photo {
+    height: 40rem;
+
+    &:first-child {
+      margin-right: 1rem;
+    }
+  }
 }

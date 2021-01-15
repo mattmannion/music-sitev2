@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../resources/icons/logo-icon/ms-icon-70x70.png';
+import logo from '../../resources/icons/ms-icon/ms-icon-70x70.png';
 
 export default function nav() {
   return (
@@ -25,7 +25,9 @@ export default function nav() {
         </nav>
         <nav className='nav-bot'>
           <div className='nav-bot__container'>
-            <Link to='/product'>To Product</Link>
+            <Link className='nav-bot__link' to='/product'>
+              To Product
+            </Link>
             <div>new items</div>
             <div>on sale</div>
             <div>news</div>

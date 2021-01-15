@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../resources/icons/logo-icon/ms-icon-144x144.png';
+import logo from '../../resources/icons/ms-icon/ms-icon-144x144.png';
 
 export default function footer() {
   return (

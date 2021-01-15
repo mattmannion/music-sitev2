@@ -45980,8 +45980,8 @@ if ("development" !== "production") {
     style: _propTypes.default.object
   });
 }
-},{"react-router":"../../node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"../../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"../../node_modules/react/index.js","history":"../../node_modules/history/esm/history.js","prop-types":"../../node_modules/prop-types/index.js","tiny-warning":"../../node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"../../node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"../../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"../../node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"../resources/icons/logo-icon/ms-icon-70x70.png":[function(require,module,exports) {
-module.exports = "/ms-icon-70x70.621504ea.png";
+},{"react-router":"../../node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"../../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"../../node_modules/react/index.js","history":"../../node_modules/history/esm/history.js","prop-types":"../../node_modules/prop-types/index.js","tiny-warning":"../../node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"../../node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"../../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"../../node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"../resources/icons/ms-icon/ms-icon-70x70.png":[function(require,module,exports) {
+module.exports = "/ms-icon-70x70.15aaf019.png";
 },{}],"../javascript/static/nav.jsx":[function(require,module,exports) {
 "use strict";
 
@@ -45994,7 +45994,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
-var _msIcon70x = _interopRequireDefault(require("../../resources/icons/logo-icon/ms-icon-70x70.png"));
+var _msIcon70x = _interopRequireDefault(require("../../resources/icons/ms-icon/ms-icon-70x70.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -46020,10 +46020,15 @@ function nav() {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "nav-bot__container"
   }, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
+    className: "nav-bot__link",
     to: "/product"
   }, "To Product"), /*#__PURE__*/_react.default.createElement("div", null, "new items"), /*#__PURE__*/_react.default.createElement("div", null, "on sale"), /*#__PURE__*/_react.default.createElement("div", null, "news"), /*#__PURE__*/_react.default.createElement("div", null, "support"), /*#__PURE__*/_react.default.createElement("div", null, "more")))));
 }
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","../../resources/icons/logo-icon/ms-icon-70x70.png":"../resources/icons/logo-icon/ms-icon-70x70.png"}],"../javascript/home/home.jsx":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","../../resources/icons/ms-icon/ms-icon-70x70.png":"../resources/icons/ms-icon/ms-icon-70x70.png"}],"../resources/images/vendor/unsplash/hero-guitar-3.jpg":[function(require,module,exports) {
+module.exports = "/hero-guitar-3.dfd536d9.jpg";
+},{}],"../resources/images/vendor/unsplash/hero-guitar-2.jpg":[function(require,module,exports) {
+module.exports = "/hero-guitar-2.b6333c34.jpg";
+},{}],"../javascript/home/home.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46035,18 +46040,32 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
+var _heroGuitar = _interopRequireDefault(require("../../resources/images/vendor/unsplash/hero-guitar-3.jpg"));
+
+var _heroGuitar2 = _interopRequireDefault(require("../../resources/images/vendor/unsplash/hero-guitar-2.jpg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const home = () => /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
   className: "home"
-}, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-  to: "/product"
-}, "To Product")));
+}, /*#__PURE__*/_react.default.createElement("div", {
+  className: "home__featured"
+}, /*#__PURE__*/_react.default.createElement("img", {
+  className: "home__photo",
+  src: _heroGuitar.default,
+  alt: "featured photo"
+})), /*#__PURE__*/_react.default.createElement("div", {
+  className: "home__sale"
+}, /*#__PURE__*/_react.default.createElement("img", {
+  className: "home__photo",
+  src: _heroGuitar2.default,
+  alt: "sale photo"
+}))));
 
 var _default = (0, _reactRouterDom.withRouter)(home);
 
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js"}],"../javascript/product/product.jsx":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","../../resources/images/vendor/unsplash/hero-guitar-3.jpg":"../resources/images/vendor/unsplash/hero-guitar-3.jpg","../../resources/images/vendor/unsplash/hero-guitar-2.jpg":"../resources/images/vendor/unsplash/hero-guitar-2.jpg"}],"../javascript/product/product.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46069,8 +46088,8 @@ const Product = () => /*#__PURE__*/_react.default.createElement(_react.default.F
 var _default = (0, _reactRouterDom.withRouter)(Product);
 
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js"}],"../resources/icons/logo-icon/ms-icon-144x144.png":[function(require,module,exports) {
-module.exports = "/ms-icon-144x144.9d8e9893.png";
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js"}],"../resources/icons/ms-icon/ms-icon-144x144.png":[function(require,module,exports) {
+module.exports = "/ms-icon-144x144.6b7cf344.png";
 },{}],"../javascript/static/footer.jsx":[function(require,module,exports) {
 "use strict";
 
@@ -46083,7 +46102,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
-var _msIcon144x = _interopRequireDefault(require("../../resources/icons/logo-icon/ms-icon-144x144.png"));
+var _msIcon144x = _interopRequireDefault(require("../../resources/icons/ms-icon/ms-icon-144x144.png"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -46110,7 +46129,7 @@ function footer() {
     className: "footer__column"
   }, /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"), /*#__PURE__*/_react.default.createElement("div", null, "filler"))))));
 }
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","../../resources/icons/logo-icon/ms-icon-144x144.png":"../resources/icons/logo-icon/ms-icon-144x144.png"}],"../javascript/index.jsx":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","../../resources/icons/ms-icon/ms-icon-144x144.png":"../resources/icons/ms-icon/ms-icon-144x144.png"}],"../javascript/index.jsx":[function(require,module,exports) {
 "use strict";
 
 require("core-js/stable");
@@ -46177,7 +46196,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58534" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59312" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

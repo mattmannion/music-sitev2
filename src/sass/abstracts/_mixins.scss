@@ -23,6 +23,11 @@
   align-items: center;
 }
 
+@mixin verticalPageMargin {
+  margin-top: 20rem;
+  margin-bottom: 5rem;
+}
+
 @mixin boxShadow {
   box-shadow: 1rem 1rem 5rem rgba($black, 0.5);
 }
@@ -36,4 +41,17 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+
+@mixin linkTrans {
+  div {
+    border-bottom: transparent 2px solid;
+    transition: all .2s;
+
+    &:hover,
+    &:active {
+      color: $near-black;
+      border-bottom: $linkBB;
+    }
+  }
 }

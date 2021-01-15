@@ -14,6 +14,7 @@
 
     &__logo {
       @include centerFlex;
+      @include linkTrans;
     }
 
     &__search {
@@ -22,6 +23,14 @@
       border-radius: 0;
       outline: none;
       min-width: 25%;
+    }
+
+    &__account {
+      @include centerFlex;
+
+      div {
+        margin-right: 2.5rem;
+      }
     }
   }
 
@@ -35,6 +44,18 @@
       @include betweenFlex;
       flex-flow: wrap;
       margin: .5rem $side-margin;
+
+    }
+
+    &__link {
+      border-bottom: transparent 1px solid;
+      transition: border .25s;
+
+      &:active,
+      &:hover {
+        border-bottom: $near-black 1px solid;
+      }
     }
   }
+
 }
