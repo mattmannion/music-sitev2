@@ -1,3 +1,4 @@
+// positioning 
 @mixin centerFlex {
   display: flex;
   justify-content: center;
@@ -28,12 +29,14 @@
   margin-bottom: 5rem;
 }
 
-@mixin boxShadow {
-  box-shadow: 1rem 1rem 5rem rgba($black, 0.5);
-}
+// background positioning
 
-@mixin boxShadow-thick {
-  box-shadow: 1rem 1rem 5rem rgba($black, 0.75);
+@mixin centerBG($url) {
+  $bg-opacity: 0.8;
+  background: linear-gradient(0deg, rgba($black, $bg-opacity), rgba($black, $bg-opacity)), url($url);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
 }
 
 @mixin fixedBG {
@@ -41,6 +44,15 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+
+// general stylings
+@mixin boxShadow {
+  box-shadow: 1rem 1rem 5rem rgba($black, 0.5);
+}
+
+@mixin boxShadow-thick {
+  box-shadow: 1rem 1rem 5rem rgba($black, 0.75);
 }
 
 @mixin linkTrans {

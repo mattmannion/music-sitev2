@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../../../home/matt/.nvm/versions/node/v15.5.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../home/matt/.nvm/versions/node/v15.5.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../../resources/images/vendor/unsplash/prs.jfif":[["prs.025fa7fe.jfif","../resources/images/vendor/unsplash/prs.jfif"],"../resources/images/vendor/unsplash/prs.jfif"],"./../../resources/images/vendor/unsplash/strat.jfif":[["strat.21546ea6.jfif","../resources/images/vendor/unsplash/strat.jfif"],"../resources/images/vendor/unsplash/strat.jfif"],"./../../resources/images/vendor/unsplash/5150.jfif":[["5150.b5c1e01d.jfif","../resources/images/vendor/unsplash/5150.jfif"],"../resources/images/vendor/unsplash/5150.jfif"],"./../../resources/images/vendor/unsplash/strat-item.jpg":[["strat-item.c776162e.jpg","../resources/images/vendor/unsplash/strat-item.jpg"],"../resources/images/vendor/unsplash/strat-item.jpg"],"_css_loader":"../../../../../../home/matt/.nvm/versions/node/v15.5.0/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../home/matt/.nvm/versions/node/v15.5.0/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

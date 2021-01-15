@@ -1,9 +1,9 @@
 .home {
+  @include centerGrid;
   @include verticalPageMargin;
 
   &__flex-container {
     @include centerFlex;
-    margin: 0 20rem;
     flex-flow: wrap;
   }
 
@@ -24,13 +24,33 @@
     $box-size: 20rem;
     height: $box-size;
     width: $box-size;
+    color: $white;
     text-align: center;
     transform: translateX(-.5rem);
 
     transition: all .25s;
 
     &:hover {
-      box-shadow: 1rem 1rem 2rem rgba($black, 0.25);
+      box-shadow: 0.5rem 0.5rem 1rem rgba($black, 0.5);
+    }
+  }
+
+  &__box {
+
+    &-1 {
+      @include centerBG('../../resources/images/vendor/unsplash/prs.jfif');
+    }
+
+    &-2 {
+      @include centerBG('../../resources/images/vendor/unsplash/strat.jfif');
+    }
+
+    &-3 {
+      @include centerBG('../../resources/images/vendor/unsplash/5150.jfif');
+    }
+
+    &-4 {
+      @include centerBG('../../resources/images/vendor/unsplash/strat-item.jpg');
     }
   }
 }
