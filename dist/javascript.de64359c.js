@@ -46049,6 +46049,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 const home = () => /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
   className: "home"
 }, /*#__PURE__*/_react.default.createElement("div", {
+  className: "home__flex-container"
+}, /*#__PURE__*/_react.default.createElement("div", {
   className: "home__featured"
 }, /*#__PURE__*/_react.default.createElement("img", {
   className: "home__photo",
@@ -46060,7 +46062,17 @@ const home = () => /*#__PURE__*/_react.default.createElement(_react.default.Frag
   className: "home__photo",
   src: _heroGuitar2.default,
   alt: "sale photo"
-}))));
+}))), /*#__PURE__*/_react.default.createElement("div", {
+  className: "home__flex-container"
+}, /*#__PURE__*/_react.default.createElement("div", {
+  className: "home__info-boxes home__box-1"
+}, /*#__PURE__*/_react.default.createElement("p", null), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, harum.")), /*#__PURE__*/_react.default.createElement("div", {
+  className: "home__info-boxes home__box-2"
+}, /*#__PURE__*/_react.default.createElement("p", null), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, similique.")), /*#__PURE__*/_react.default.createElement("div", {
+  className: "home__info-boxes home__box-3"
+}, /*#__PURE__*/_react.default.createElement("p", null), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, similique.")), /*#__PURE__*/_react.default.createElement("div", {
+  className: "home__info-boxes home__box-4"
+}, /*#__PURE__*/_react.default.createElement("p", null), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, similique.")))));
 
 var _default = (0, _reactRouterDom.withRouter)(home);
 
