@@ -7,8 +7,8 @@
   background-color: $white;
 
   &-top {
-    margin: 2rem $side-margin;
     @include betweenFlex;
+    margin: 2rem $side-margin;
     flex-flow: wrap;
     margin-bottom: 2.5rem;
 

@@ -38,19 +38,19 @@
   &__box {
 
     &-1 {
-      @include centerBG('../../resources/images/vendor/unsplash/prs.jfif');
+      @include darkCenterBG('../../resources/images/vendor/unsplash/prs.jfif');
     }
 
     &-2 {
-      @include centerBG('../../resources/images/vendor/unsplash/strat.jfif');
+      @include darkCenterBG('../../resources/images/vendor/unsplash/strat.jfif');
     }
 
     &-3 {
-      @include centerBG('../../resources/images/vendor/unsplash/5150.jfif');
+      @include darkCenterBG('../../resources/images/vendor/unsplash/5150.jfif');
     }
 
     &-4 {
-      @include centerBG('../../resources/images/vendor/unsplash/strat-item.jpg');
+      @include darkCenterBG('../../resources/images/vendor/unsplash/strat-item.jpg');
     }
   }
 }

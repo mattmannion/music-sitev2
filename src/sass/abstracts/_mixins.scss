@@ -1,4 +1,7 @@
-// positioning 
+//////////////////////////////
+/// component  positioning ///
+//////////////////////////////
+
 @mixin centerFlex {
   display: flex;
   justify-content: center;
@@ -29,9 +32,17 @@
   margin-bottom: 5rem;
 }
 
-// background positioning
+//////////////////////////////
+/// background positioning ///
+//////////////////////////////
 
 @mixin centerBG($url) {
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+}
+
+@mixin darkCenterBG($url) {
   $bg-opacity: 0.8;
   background: linear-gradient(0deg, rgba($black, $bg-opacity), rgba($black, $bg-opacity)), url($url);
   background-size: cover;
@@ -46,7 +57,10 @@
   background-position: center;
 }
 
-// general stylings
+//////////////////////////////
+////// general styling ///////
+//////////////////////////////
+
 @mixin boxShadow {
   box-shadow: 1rem 1rem 5rem rgba($black, 0.5);
 }
@@ -57,7 +71,7 @@
 
 @mixin linkTrans {
   div {
-    border-bottom: transparent 2px solid;
+    border-bottom: transparent 1px solid;
     transition: all .2s;
 
     &:hover,
