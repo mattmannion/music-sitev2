@@ -3,7 +3,7 @@
   @include centerFlex;
   align-items: flex-start;
 
-  &__viewer {
+  .viewer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-right: 1rem;

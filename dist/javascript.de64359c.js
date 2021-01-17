@@ -46097,12 +46097,14 @@ var _stratItem = _interopRequireDefault(require("../../resources/images/vendor/u
 
 var _stratMain = _interopRequireDefault(require("../../resources/images/vendor/unsplash/strat-main.jpg"));
 
+var _msIcon70x = _interopRequireDefault(require("../../resources/icons/ms-icon/ms-icon-70x70.png"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const Product = () => /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
   className: "product"
 }, /*#__PURE__*/_react.default.createElement("div", {
-  className: "product__viewer"
+  className: "viewer"
 }, /*#__PURE__*/_react.default.createElement("img", {
   src: _stratItem.default,
   alt: "viewer item photo",
@@ -46133,12 +46135,53 @@ const Product = () => /*#__PURE__*/_react.default.createElement(_react.default.F
   src: _stratMain.default,
   alt: "main item photo",
   className: "main__item"
-}))));
+})), /*#__PURE__*/_react.default.createElement("div", {
+  className: "details"
+}, /*#__PURE__*/_react.default.createElement("div", {
+  className: "details__pricing "
+}, /*#__PURE__*/_react.default.createElement("div", {
+  className: "price-grouping"
+}, /*#__PURE__*/_react.default.createElement("h6", null, "Buy now:"), /*#__PURE__*/_react.default.createElement("h1", null, "$1234.56")), /*#__PURE__*/_react.default.createElement("img", {
+  src: _msIcon70x.default,
+  alt: "logo icon"
+})), /*#__PURE__*/_react.default.createElement("div", {
+  className: "details__perks"
+}, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", {
+  src: "",
+  alt: ""
+}), /*#__PURE__*/_react.default.createElement("span", null, "Quality Assurance")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", {
+  src: "",
+  alt: ""
+}), /*#__PURE__*/_react.default.createElement("span", null, "Free Shipping")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", {
+  src: "",
+  alt: ""
+}), /*#__PURE__*/_react.default.createElement("span", null, "24/7 Support")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("img", {
+  src: "",
+  alt: ""
+}), /*#__PURE__*/_react.default.createElement("span", null, "1 Year warrenty"))), /*#__PURE__*/_react.default.createElement("div", {
+  className: "details__options"
+}, /*#__PURE__*/_react.default.createElement("img", {
+  src: _stratItem.default,
+  alt: "viewer item photo",
+  className: "viewer__items"
+}), /*#__PURE__*/_react.default.createElement("img", {
+  src: _stratItem.default,
+  alt: "viewer item photo",
+  className: "viewer__items"
+}), /*#__PURE__*/_react.default.createElement("img", {
+  src: _stratItem.default,
+  alt: "viewer item photo",
+  className: "viewer__items"
+}), /*#__PURE__*/_react.default.createElement("img", {
+  src: _stratItem.default,
+  alt: "viewer item photo",
+  className: "viewer__items"
+})))));
 
 var _default = (0, _reactRouterDom.withRouter)(Product);
 
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","../../resources/images/vendor/unsplash/strat-item.jpg":"../resources/images/vendor/unsplash/strat-item.jpg","../../resources/images/vendor/unsplash/strat-main.jpg":"../resources/images/vendor/unsplash/strat-main.jpg"}],"../resources/icons/ms-icon/ms-icon-144x144.png":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","../../resources/images/vendor/unsplash/strat-item.jpg":"../resources/images/vendor/unsplash/strat-item.jpg","../../resources/images/vendor/unsplash/strat-main.jpg":"../resources/images/vendor/unsplash/strat-main.jpg","../../resources/icons/ms-icon/ms-icon-70x70.png":"../resources/icons/ms-icon/ms-icon-70x70.png"}],"../resources/icons/ms-icon/ms-icon-144x144.png":[function(require,module,exports) {
 module.exports = "/ms-icon-144x144.6b7cf344.png";
 },{}],"../javascript/static/footer.jsx":[function(require,module,exports) {
 "use strict";
