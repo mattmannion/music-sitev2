@@ -161,7 +161,19 @@ a {
 
 .product {
   margin-top: 20rem;
-  height: 75vh; }
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start; }
+  .product__viewer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 1rem; }
+    .product__viewer .viewer__items {
+      height: 10rem; }
+  .product__main .main__item {
+    height: 100rem; }
 
 
 /*# sourceMappingURL=/imports.d025b1c5.css.map */

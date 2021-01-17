@@ -46077,7 +46077,11 @@ const home = () => /*#__PURE__*/_react.default.createElement(_react.default.Frag
 var _default = (0, _reactRouterDom.withRouter)(home);
 
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","../../resources/images/vendor/unsplash/hero-guitar-3.jpg":"../resources/images/vendor/unsplash/hero-guitar-3.jpg","../../resources/images/vendor/unsplash/hero-guitar-2.jpg":"../resources/images/vendor/unsplash/hero-guitar-2.jpg"}],"../javascript/product/product.jsx":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","../../resources/images/vendor/unsplash/hero-guitar-3.jpg":"../resources/images/vendor/unsplash/hero-guitar-3.jpg","../../resources/images/vendor/unsplash/hero-guitar-2.jpg":"../resources/images/vendor/unsplash/hero-guitar-2.jpg"}],"../resources/images/vendor/unsplash/strat-item.jpg":[function(require,module,exports) {
+module.exports = "/strat-item.c776162e.jpg";
+},{}],"../resources/images/vendor/unsplash/strat-main.jpg":[function(require,module,exports) {
+module.exports = "/strat-main.9d22a8e2.jpg";
+},{}],"../javascript/product/product.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46089,18 +46093,52 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
+var _stratItem = _interopRequireDefault(require("../../resources/images/vendor/unsplash/strat-item.jpg"));
+
+var _stratMain = _interopRequireDefault(require("../../resources/images/vendor/unsplash/strat-main.jpg"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const Product = () => /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
   className: "product"
-}, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Link, {
-  to: "/"
-}, "To Home")));
+}, /*#__PURE__*/_react.default.createElement("div", {
+  className: "product__viewer"
+}, /*#__PURE__*/_react.default.createElement("img", {
+  src: _stratItem.default,
+  alt: "viewer item photo",
+  className: "viewer__items"
+}), /*#__PURE__*/_react.default.createElement("img", {
+  src: _stratItem.default,
+  alt: "viewer item photo",
+  className: "viewer__items"
+}), /*#__PURE__*/_react.default.createElement("img", {
+  src: _stratItem.default,
+  alt: "viewer item photo",
+  className: "viewer__items"
+}), /*#__PURE__*/_react.default.createElement("img", {
+  src: _stratItem.default,
+  alt: "viewer item photo",
+  className: "viewer__items"
+}), /*#__PURE__*/_react.default.createElement("img", {
+  src: _stratItem.default,
+  alt: "viewer item photo",
+  className: "viewer__items"
+}), /*#__PURE__*/_react.default.createElement("img", {
+  src: _stratItem.default,
+  alt: "viewer item photo",
+  className: "viewer__items"
+})), /*#__PURE__*/_react.default.createElement("div", {
+  className: "product__main"
+}, /*#__PURE__*/_react.default.createElement("img", {
+  src: _stratMain.default,
+  alt: "main item photo",
+  className: "main__item"
+}))));
 
 var _default = (0, _reactRouterDom.withRouter)(Product);
 
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js"}],"../resources/icons/ms-icon/ms-icon-144x144.png":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","../../resources/images/vendor/unsplash/strat-item.jpg":"../resources/images/vendor/unsplash/strat-item.jpg","../../resources/images/vendor/unsplash/strat-main.jpg":"../resources/images/vendor/unsplash/strat-main.jpg"}],"../resources/icons/ms-icon/ms-icon-144x144.png":[function(require,module,exports) {
 module.exports = "/ms-icon-144x144.6b7cf344.png";
 },{}],"../javascript/static/footer.jsx":[function(require,module,exports) {
 "use strict";
@@ -46208,7 +46246,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59312" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56085" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

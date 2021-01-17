@@ -1,4 +1,21 @@
 .product {
-  margin-top: 20rem;
-  height: 75vh;
+  @include verticalPageMargin;
+  @include centerFlex;
+  align-items: flex-start;
+
+  &__viewer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 1rem;
+
+    .viewer__items {
+      height: 10rem;
+    }
+  }
+
+  &__main {
+    .main__item {
+      height: 100rem;
+    }
+  }
 }
