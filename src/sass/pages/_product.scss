@@ -18,4 +18,124 @@
       height: 100rem;
     }
   }
+
+  .details {
+    @include centerFlex;
+    flex-flow: column;
+    margin-left: 1rem;
+
+    &__pricing {
+      @include centerFlex;
+    }
+
+    &__perks {
+      @include centerGrid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 5rem;
+
+      div {
+        @include centerFlex;
+        margin: .5rem;
+        width: 25rem;
+        border: $black .2rem solid;
+
+        img {
+          height: 3rem;
+          margin-right: 2rem;
+        }
+      }
+    }
+
+    &__add-to-cart {
+      margin-top: 5rem;
+
+      button {
+        font-size: 2rem;
+        font-weight: 700;
+        border: transparent .1rem solid;
+        background-color: $black;
+        color: $white;
+        margin-right: 1rem;
+        padding: 1rem;
+        transition: all .25s;
+
+        &:hover {
+          border: $black .1rem solid;
+          background-color: $white;
+          color: $black;
+        }
+      }
+    }
+
+    &__options {
+      @include centerFlex;
+      margin-top: 5rem;
+
+      img {
+        height: 10rem;
+      }
+    }
+  }
+}
+
+.description {
+  @include centerFlex;
+  flex-flow: column;
+  text-align: center;
+  margin: 10rem 15rem;
+
+  &__links {
+    @include centerFlex;
+
+    div {
+      border: $black .2rem solid;
+      font-size: 2.5rem;
+      font-weight: 700;
+      padding: 1rem;
+      width: 25rem;
+    }
+
+    div:first-child {
+      background-color: $dark-main;
+      margin-right: 1rem;
+      color: $white;
+    }
+
+    div:last-child {
+      background-color: $dark-sec;
+      margin-right: 1rem;
+    }
+  }
+
+  &__info {
+    margin-top: 5rem;
+
+    p {
+      margin-top: 5rem;
+    }
+  }
+
+  &__technical {
+    margin-top: 5rem;
+    width: 75%;
+    background-color: $dark-sec;
+    border-collapse: collapse;
+
+    tbody {
+
+      tr:nth-child(even) {
+        background-color: $dark-tert;
+      }
+
+      td {
+        padding: .5rem;
+        text-align: left;
+      }
+
+      td:nth-child(odd) {
+        width: 15%;
+      }
+    }
+
+  }
 }

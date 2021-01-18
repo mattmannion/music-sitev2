@@ -46081,7 +46081,7 @@ exports.default = _default;
 module.exports = "/strat-item.c776162e.jpg";
 },{}],"../resources/images/vendor/unsplash/strat-main.jpg":[function(require,module,exports) {
 module.exports = "/strat-main.9d22a8e2.jpg";
-},{}],"../javascript/product/product.jsx":[function(require,module,exports) {
+},{}],"../javascript/product/product-comps/viewer.jsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -46091,19 +46091,13 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _reactRouterDom = require("react-router-dom");
+var _stratItem = _interopRequireDefault(require("../../../resources/images/vendor/unsplash/strat-item.jpg"));
 
-var _stratItem = _interopRequireDefault(require("../../resources/images/vendor/unsplash/strat-item.jpg"));
-
-var _stratMain = _interopRequireDefault(require("../../resources/images/vendor/unsplash/strat-main.jpg"));
-
-var _msIcon70x = _interopRequireDefault(require("../../resources/icons/ms-icon/ms-icon-70x70.png"));
+var _stratMain = _interopRequireDefault(require("../../../resources/images/vendor/unsplash/strat-main.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const Product = () => /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
-  className: "product"
-}, /*#__PURE__*/_react.default.createElement("div", {
+const viewer = () => /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
   className: "viewer"
 }, /*#__PURE__*/_react.default.createElement("img", {
   src: _stratItem.default,
@@ -46135,13 +46129,31 @@ const Product = () => /*#__PURE__*/_react.default.createElement(_react.default.F
   src: _stratMain.default,
   alt: "main item photo",
   className: "main__item"
-})), /*#__PURE__*/_react.default.createElement("div", {
+})));
+
+var _default = viewer;
+exports.default = _default;
+},{"react":"../../node_modules/react/index.js","../../../resources/images/vendor/unsplash/strat-item.jpg":"../resources/images/vendor/unsplash/strat-item.jpg","../../../resources/images/vendor/unsplash/strat-main.jpg":"../resources/images/vendor/unsplash/strat-main.jpg"}],"../javascript/product/product-comps/details.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _msIcon70x = _interopRequireDefault(require("../../../resources/icons/ms-icon/ms-icon-70x70.png"));
+
+var _stratItem = _interopRequireDefault(require("../../../resources/images/vendor/unsplash/strat-item.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const details = () => /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
   className: "details"
 }, /*#__PURE__*/_react.default.createElement("div", {
   className: "details__pricing "
-}, /*#__PURE__*/_react.default.createElement("div", {
-  className: "price-grouping"
-}, /*#__PURE__*/_react.default.createElement("h6", null, "Buy now:"), /*#__PURE__*/_react.default.createElement("h1", null, "$1234.56")), /*#__PURE__*/_react.default.createElement("img", {
+}, /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h6", null, "Buy now:"), /*#__PURE__*/_react.default.createElement("h1", null, "$1234.56")), /*#__PURE__*/_react.default.createElement("img", {
   src: _msIcon70x.default,
   alt: "logo icon"
 })), /*#__PURE__*/_react.default.createElement("div", {
@@ -46159,29 +46171,80 @@ const Product = () => /*#__PURE__*/_react.default.createElement(_react.default.F
   src: "",
   alt: ""
 }), /*#__PURE__*/_react.default.createElement("span", null, "1 Year warrenty"))), /*#__PURE__*/_react.default.createElement("div", {
+  className: "details__add-to-cart"
+}, /*#__PURE__*/_react.default.createElement("button", {
+  className: "details__btn"
+}, "Add To Cart"), /*#__PURE__*/_react.default.createElement("span", null, "In stock and ready to ship")), /*#__PURE__*/_react.default.createElement("div", {
   className: "details__options"
 }, /*#__PURE__*/_react.default.createElement("img", {
   src: _stratItem.default,
-  alt: "viewer item photo",
-  className: "viewer__items"
+  alt: "options item photo"
 }), /*#__PURE__*/_react.default.createElement("img", {
   src: _stratItem.default,
-  alt: "viewer item photo",
-  className: "viewer__items"
+  alt: "options item photo"
 }), /*#__PURE__*/_react.default.createElement("img", {
   src: _stratItem.default,
-  alt: "viewer item photo",
-  className: "viewer__items"
+  alt: "options item photo"
 }), /*#__PURE__*/_react.default.createElement("img", {
   src: _stratItem.default,
-  alt: "viewer item photo",
-  className: "viewer__items"
-})))));
+  alt: "options item photo"
+}))));
+
+var _default = details;
+exports.default = _default;
+},{"react":"../../node_modules/react/index.js","../../../resources/icons/ms-icon/ms-icon-70x70.png":"../resources/icons/ms-icon/ms-icon-70x70.png","../../../resources/images/vendor/unsplash/strat-item.jpg":"../resources/images/vendor/unsplash/strat-item.jpg"}],"../javascript/product/product-comps/description.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+const description = () => /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+  className: "description"
+}, /*#__PURE__*/_react.default.createElement("div", {
+  className: "description__links"
+}, /*#__PURE__*/_react.default.createElement("div", null, "Description"), /*#__PURE__*/_react.default.createElement("div", null, "Specs")), /*#__PURE__*/_react.default.createElement("div", {
+  className: "description__info"
+}, /*#__PURE__*/_react.default.createElement("h1", null, "Info Title"), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores quos magnam et nisi deserunt. Ab amet eum enim eaque accusantium, fugit esse et provident iure, veritatis est ipsa ipsam asperiores? Perferendis ullam quia quibusdam dignissimos officiis laudantium in voluptatem. Perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veritatis quo enim placeat aut magnam quis, non incidunt, nihil rem autem consequatur tempora inventore numquam, iusto excepturi ut impedit voluptatum sunt. Eligendi corporis temporibus vel nisi. Officiis repellendus fugit quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quas eveniet nihil officiis omnis quo, quos modi impedit, et ipsum iusto eum doloribus. Doloremque voluptate iure fugiat. Accusamus quo facere numquam iste temporibus cupiditate tenetur? Iusto quam recusandae ad, numquam libero ipsum animi velit amet architecto quas officiis veritatis dolorum ducimus, enim quod expedita facilis laborum voluptas vel! Saepe blanditiis nihil dignissimos vel aspernatur hic libero rem, vitae illum et incidunt nostrum ea nulla, distinctio, facilis dolores nemo quibusdam voluptas repellendus quaerat inventore? Aut reiciendis quod cum explicabo atque, totam quos? Porro iste consectetur quasi sequi? Nobis praesentium aperiam sed!"), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("p", null, "Lorem ipsum dolor sit amet consectetur adipisicing elit. A quod, deleniti unde totam facilis consequatur esse veniam molestiae aperiam excepturi. Consectetur sunt saepe nostrum officiis voluptatibus. Doloremque iure quod voluptatibus recusandae repellendus ab, temporibus commodi aperiam nihil facere ea eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dicta distinctio fuga cum vel dolore ad ipsam repellat doloribus voluptas voluptatum eligendi in, veritatis inventore. Excepturi aperiam ex deleniti dolorum! Officiis quod et at aut consequuntur molestias cum architecto sunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat vel magni eaque, ex aspernatur saepe obcaecati dicta enim beatae dolorem vero ducimus exercitationem, reiciendis molestias, sit corporis eos! Voluptate ipsa, unde quod a alias minus quibusdam adipisci excepturi quo, nostrum, dolorem ratione voluptatibus tempora illum cumque voluptatum atque similique beatae voluptates modi esse vel magnam repellat. Necessitatibus recusandae pariatur asperiores optio accusamus doloribus rem amet minima, voluptate veniam eum, est aliquid ipsam ipsa hic quibusdam similique sequi harum ducimus magni deserunt facilis corporis velit? Molestiae dolorum provident, veniam quis, totam eligendi fugiat quas ex non soluta maiores numquam perferendis autem!")), /*#__PURE__*/_react.default.createElement("table", {
+  className: "description__technical"
+}, /*#__PURE__*/_react.default.createElement("tbody", null, /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("td", null, "spec 1"), /*#__PURE__*/_react.default.createElement("td", null, "info 1")), /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("td", null, "spec 2"), /*#__PURE__*/_react.default.createElement("td", null, "info 2")), /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("td", null, "spec 3"), /*#__PURE__*/_react.default.createElement("td", null, "info 3")), /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("td", null, "spec 4"), /*#__PURE__*/_react.default.createElement("td", null, "info 4")), /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("td", null, "spec 5"), /*#__PURE__*/_react.default.createElement("td", null, "info 5")), /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("td", null, "spec 6"), /*#__PURE__*/_react.default.createElement("td", null, "info 6")), /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("td", null, "spec 7"), /*#__PURE__*/_react.default.createElement("td", null, "info 7")), /*#__PURE__*/_react.default.createElement("tr", null, /*#__PURE__*/_react.default.createElement("td", null, "spec 8"), /*#__PURE__*/_react.default.createElement("td", null, "info 8"))))));
+
+var _default = description;
+exports.default = _default;
+},{"react":"../../node_modules/react/index.js"}],"../javascript/product/product.jsx":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _viewer = _interopRequireDefault(require("./product-comps/viewer"));
+
+var _details = _interopRequireDefault(require("./product-comps/details"));
+
+var _description = _interopRequireDefault(require("./product-comps/description"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// components
+const Product = () => /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+  className: "product"
+}, /*#__PURE__*/_react.default.createElement(_viewer.default, null), /*#__PURE__*/_react.default.createElement(_details.default, null)), /*#__PURE__*/_react.default.createElement(_description.default, null));
 
 var _default = (0, _reactRouterDom.withRouter)(Product);
 
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","../../resources/images/vendor/unsplash/strat-item.jpg":"../resources/images/vendor/unsplash/strat-item.jpg","../../resources/images/vendor/unsplash/strat-main.jpg":"../resources/images/vendor/unsplash/strat-main.jpg","../../resources/icons/ms-icon/ms-icon-70x70.png":"../resources/icons/ms-icon/ms-icon-70x70.png"}],"../resources/icons/ms-icon/ms-icon-144x144.png":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/esm/react-router-dom.js","./product-comps/viewer":"../javascript/product/product-comps/viewer.jsx","./product-comps/details":"../javascript/product/product-comps/details.jsx","./product-comps/description":"../javascript/product/product-comps/description.jsx"}],"../resources/icons/ms-icon/ms-icon-144x144.png":[function(require,module,exports) {
 module.exports = "/ms-icon-144x144.6b7cf344.png";
 },{}],"../javascript/static/footer.jsx":[function(require,module,exports) {
 "use strict";
