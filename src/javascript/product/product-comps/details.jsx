@@ -27,7 +27,7 @@ const details = () => (
         </div>
         <div>
           <img src='' alt='' />
-          <span>1 Year warrenty</span>
+          <span>1 Year Warrenty</span>
         </div>
       </div>
       <div className='details__add-to-cart'>

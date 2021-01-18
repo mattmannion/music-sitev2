@@ -52,8 +52,9 @@ $img-selector-margin: .2rem;
 
       div {
         @include centerFlex;
+        font-size: 1.6rem;
         margin: .5rem;
-        width: 25rem;
+        width: 20rem;
         border: $black .2rem solid;
 
         img {
