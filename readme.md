@@ -1,3 +1,7 @@
+--In Progress--
+
+---
+
 Matt Mannion's React App setup w/ Parcel and Sass.
 
 run "setup" command to remove .gitkeep placeholders and .git. it will also do a "git init" and a "npm i" for you. hopefully this is a smooth start. [you may delete this script from package.json if you'd like]
