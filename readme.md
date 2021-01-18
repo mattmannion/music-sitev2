@@ -1,5 +1,7 @@
 --In Progress--
 
+netlify: https://music-sitev2.netlify.app/
+
 ---
 
 Matt Mannion's React App setup w/ Parcel and Sass.
