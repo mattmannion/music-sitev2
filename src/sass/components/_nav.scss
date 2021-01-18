@@ -8,13 +8,16 @@
 
   &-top {
     @include betweenFlex;
-    margin: 2rem $side-margin;
+    margin: 1rem $side-margin;
     flex-flow: wrap;
-    margin-bottom: 2.5rem;
 
     &__logo {
       @include centerFlex;
       @include linkTrans;
+
+      img {
+        height: 5rem;
+      }
     }
 
     &__search {
