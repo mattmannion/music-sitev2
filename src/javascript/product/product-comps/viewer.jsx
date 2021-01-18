@@ -5,15 +5,41 @@ import mainItem from '../../../resources/images/vendor/unsplash/strat-main.jpg';
 const viewer = () => (
   <>
     <div className='viewer'>
-      <img src={viewerItem} alt='viewer item photo' className='viewer__items' />
-      <img src={viewerItem} alt='viewer item photo' className='viewer__items' />
-      <img src={viewerItem} alt='viewer item photo' className='viewer__items' />
-      <img src={viewerItem} alt='viewer item photo' className='viewer__items' />
-      <img src={viewerItem} alt='viewer item photo' className='viewer__items' />
-      <img src={viewerItem} alt='viewer item photo' className='viewer__items' />
+      <div className='viewer__grid'>
+        <img
+          src={viewerItem}
+          alt='viewer item photo'
+          className='viewer__items'
+        />
+        <img
+          src={viewerItem}
+          alt='viewer item photo'
+          className='viewer__items'
+        />
+        <img
+          src={viewerItem}
+          alt='viewer item photo'
+          className='viewer__items'
+        />
+        <img
+          src={viewerItem}
+          alt='viewer item photo'
+          className='viewer__items'
+        />
+        <img
+          src={viewerItem}
+          alt='viewer item photo'
+          className='viewer__items'
+        />
+        <img
+          src={viewerItem}
+          alt='viewer item photo'
+          className='viewer__items'
+        />
+      </div>
     </div>
-    <div className='product__main'>
-      <img src={mainItem} alt='main item photo' className='main__item' />
+    <div className='main__item'>
+      <img src={mainItem} alt='main item photo' />
     </div>
   </>
 );

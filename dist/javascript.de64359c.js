@@ -46099,6 +46099,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 const viewer = () => /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
   className: "viewer"
+}, /*#__PURE__*/_react.default.createElement("div", {
+  className: "viewer__grid"
 }, /*#__PURE__*/_react.default.createElement("img", {
   src: _stratItem.default,
   alt: "viewer item photo",
@@ -46123,12 +46125,11 @@ const viewer = () => /*#__PURE__*/_react.default.createElement(_react.default.Fr
   src: _stratItem.default,
   alt: "viewer item photo",
   className: "viewer__items"
-})), /*#__PURE__*/_react.default.createElement("div", {
-  className: "product__main"
+}))), /*#__PURE__*/_react.default.createElement("div", {
+  className: "main__item"
 }, /*#__PURE__*/_react.default.createElement("img", {
   src: _stratMain.default,
-  alt: "main item photo",
-  className: "main__item"
+  alt: "main item photo"
 })));
 
 var _default = viewer;
