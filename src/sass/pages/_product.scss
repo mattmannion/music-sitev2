@@ -1,3 +1,5 @@
+@import 'product-comps.scss/description';
+
 .product {
   @include verticalPageMargin;
   @include centerFlex;
@@ -75,67 +77,5 @@
         height: 10rem;
       }
     }
-  }
-}
-
-.description {
-  @include centerFlex;
-  flex-flow: column;
-  text-align: center;
-  margin: 10rem 15rem;
-
-  &__links {
-    @include centerFlex;
-
-    div {
-      border: $black .2rem solid;
-      font-size: 2.5rem;
-      font-weight: 700;
-      padding: 1rem;
-      width: 25rem;
-    }
-
-    div:first-child {
-      background-color: $dark-main;
-      margin-right: 1rem;
-      color: $white;
-    }
-
-    div:last-child {
-      background-color: $dark-sec;
-      margin-right: 1rem;
-    }
-  }
-
-  &__info {
-    margin-top: 5rem;
-
-    p {
-      margin-top: 5rem;
-    }
-  }
-
-  &__technical {
-    margin-top: 5rem;
-    width: 75%;
-    background-color: $dark-sec;
-    border-collapse: collapse;
-
-    tbody {
-
-      tr:nth-child(even) {
-        background-color: $dark-tert;
-      }
-
-      td {
-        padding: .5rem;
-        text-align: left;
-      }
-
-      td:nth-child(odd) {
-        width: 15%;
-      }
-    }
-
   }
 }
