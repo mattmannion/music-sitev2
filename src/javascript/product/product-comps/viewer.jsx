@@ -9,32 +9,32 @@ const viewer = () => (
         <img
           src={viewerItem}
           alt='viewer item photo'
-          className='viewer__items'
+          className='img-selector'
         />
         <img
           src={viewerItem}
           alt='viewer item photo'
-          className='viewer__items'
+          className='img-selector'
         />
         <img
           src={viewerItem}
           alt='viewer item photo'
-          className='viewer__items'
+          className='img-selector'
         />
         <img
           src={viewerItem}
           alt='viewer item photo'
-          className='viewer__items'
+          className='img-selector'
         />
         <img
           src={viewerItem}
           alt='viewer item photo'
-          className='viewer__items'
+          className='img-selector'
         />
         <img
           src={viewerItem}
           alt='viewer item photo'
-          className='viewer__items'
+          className='img-selector'
         />
       </div>
     </div>

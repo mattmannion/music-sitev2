@@ -1,11 +1,23 @@
 @import 'product-comps.scss/description';
 
-$item-selector-size: 7.5rem;
+$img-selector-size: 7.5rem;
+$img-selector-margin: .2rem;
+
+.img-selector {
+  height: $img-selector-size;
+  margin: $img-selector-margin;
+  transition: all .25s;
+
+  &:hover {
+    @include lightShadow;
+  }
+}
 
 .product {
+  margin: 0rem $side-margin;
   @include verticalPageMargin;
   @include centerGrid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: flex-start;
 
   .viewer {
@@ -15,10 +27,6 @@ $item-selector-size: 7.5rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin-right: 1rem;
-    }
-
-    &__items {
-      height: $item-selector-size;
     }
   }
 
@@ -79,10 +87,6 @@ $item-selector-size: 7.5rem;
     &__options {
       @include centerFlex;
       margin-top: 5rem;
-
-      img {
-        height: $item-selector-size;
-      }
     }
   }
 }

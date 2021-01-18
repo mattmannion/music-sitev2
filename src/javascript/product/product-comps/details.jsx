@@ -35,10 +35,26 @@ const details = () => (
         <span>In stock and ready to ship</span>
       </div>
       <div className='details__options'>
-        <img src={viewerItem} alt='options item photo' />
-        <img src={viewerItem} alt='options item photo' />
-        <img src={viewerItem} alt='options item photo' />
-        <img src={viewerItem} alt='options item photo' />
+        <img
+          src={viewerItem}
+          alt='options item photo'
+          className='img-selector'
+        />
+        <img
+          src={viewerItem}
+          alt='options item photo'
+          className='img-selector'
+        />
+        <img
+          src={viewerItem}
+          alt='options item photo'
+          className='img-selector'
+        />
+        <img
+          src={viewerItem}
+          alt='options item photo'
+          className='img-selector'
+        />
       </div>
     </div>
   </>
