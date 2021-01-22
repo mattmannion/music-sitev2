@@ -8,8 +8,9 @@
     "rf:c": "rimraf .cache/*",
     "parcel:d": "parcel src/html/index.html",
     "parcel:p": "parcel build src/html/index.html --no-cache",
+    "redirects": "cp src/html/_redirects dist/_redirects",
     "start": "run-s rf:d parcel:d",
-    "build": "run-s rf:d rf:c parcel:p",
+    "build": "run-s rf:d rf:c parcel:p redirects",
     "setup": "find . -name \".gitkeep\" -type f -delete && rm -rf .git && git init && npm i"
   },
   "author": "Matt Mannion",
