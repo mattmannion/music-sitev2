@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+// import React from 'react';
+// import { withRouter } from 'react-router-dom';
 import featured from '../../resources/images/vendor/unsplash/hero-guitar-3.jpg';
 import sale from '../../resources/images/vendor/unsplash/hero-guitar-2.jpg';
 
@@ -48,4 +48,5 @@ const home = () => (
   </>
 );
 
-export default withRouter(home);
+// export default withRouter(home);
+export default home;

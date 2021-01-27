@@ -6,7 +6,7 @@ import 'regenerator-runtime/runtime';
 // reg. runtime is for poly-filling
 // 'async' calls, import when needed
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // component imports
@@ -26,9 +26,9 @@ const Routing = () => (
   </Router>
 );
 
-ReactDOM.render(
+render(
   <>
-    <Routing />
+    <Home />
   </>,
   document.getElementById('root')
 );
