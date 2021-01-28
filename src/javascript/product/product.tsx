@@ -1,7 +1,7 @@
 import { VFC } from 'react';
 import logo from '../../resources/icons/ms-icon/ms-icon-70x70.png';
-import viewerItem from '../../resources/images/vendor/unsplash/strat-item.jpg';
-import mainItem from '../../resources/images/vendor/unsplash/strat-main.jpg';
+import viewerItem from '../../resources/images/vendor/strat-item-sm.webp';
+import mainItem from '../../resources/images/vendor/strat-main.webp';
 
 // components
 import Viewer from './product-comps/viewer';

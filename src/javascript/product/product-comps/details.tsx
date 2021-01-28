@@ -15,19 +15,19 @@ const details: VFC<{ viewerItem: string; logo: string }> = ({
       </div>
       <div className='details__perks'>
         <div>
-          <img src='' alt='' />
+          {/* <img src='' alt='' /> */}
           <span>Quality Assurance</span>
         </div>
         <div>
-          <img src='' alt='' />
+          {/* <img src='' alt='' /> */}
           <span>Free Shipping</span>
         </div>
         <div>
-          <img src='' alt='' />
+          {/* <img src='' alt='' /> */}
           <span>24/7 Support</span>
         </div>
         <div>
-          <img src='' alt='' />
+          {/* <img src='' alt='' /> */}
           <span>1 Year Warrenty</span>
         </div>
       </div>

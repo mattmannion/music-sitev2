@@ -1,9 +1,9 @@
-import featured from '../../resources/images/vendor/unsplash/hero-guitar-3-sm.jpg';
-import sale from '../../resources/images/vendor/unsplash/hero-guitar-2-sm.jpg';
+import featured from '../../resources/images/vendor/hero-guitar-3-sm.webp';
+import sale from '../../resources/images/vendor/hero-guitar-2-sm.webp';
 
 const home = () => (
   <>
-    <div className='home'>
+    <main className='home'>
       <div className='home__flex-container'>
         <div className='home__featured'>
           <img
@@ -54,7 +54,7 @@ const home = () => (
           </p>
         </div>
       </div>
-    </div>
+    </main>
   </>
 );
 
