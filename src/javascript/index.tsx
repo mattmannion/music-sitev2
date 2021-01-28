@@ -28,7 +28,7 @@ const Routing = () => (
 
 render(
   <>
-    <Home />
+    <Routing />
   </>,
   document.getElementById('root')
 );
