@@ -10,8 +10,12 @@
   &__photo {
     height: 40rem;
 
-    &:first-child {
-      margin-right: 1rem;
+    &-lg {
+      margin-right: 2rem;
+    }
+
+    &-sm {
+      width: 27rem;
     }
   }
 
@@ -19,14 +23,14 @@
     @include centerFlex;
     flex-grow: 0;
     flex-shrink: 0;
-    margin: 1.275rem;
+    margin: 1.5rem;
     background-color: $dark-sec;
     $box-size: 20rem;
     height: $box-size;
     width: $box-size;
     color: $white;
     text-align: center;
-    transform: translateX(-.5rem);
+    // transform: translateX(-.5rem);
 
     transition: all .25s;
 

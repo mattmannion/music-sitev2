@@ -8,27 +8,24 @@ import 'regenerator-runtime/runtime';
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import loadable from '@loadable/component';
 
 // component imports
-import Nav from './static/nav';
-import Home from './home/home';
-import Product from './product/product';
-import Footer from './static/footer';
-
-const Routing = () => (
-  <Router>
-    <Nav />
-    <Switch>
-      <Route exact path='/' component={Home} />
-      <Route path='/product' component={Product} />
-    </Switch>
-    <Footer />
-  </Router>
-);
+const Nav = loadable(() => import('./static/nav'));
+const Footer = loadable(() => import('./static/footer'));
+const Home = loadable(() => import('./home/home'));
+const Product = loadable(() => import('./product/product'));
 
 render(
   <>
-    <Routing />
+    <Router>
+      <Nav />
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/product' component={Product} />
+      </Switch>
+      <Footer />
+    </Router>
   </>,
   document.getElementById('root')
 );

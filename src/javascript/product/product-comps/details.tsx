@@ -1,8 +1,9 @@
-import React from 'react';
-import logo from '../../../resources/icons/ms-icon/ms-icon-70x70.png';
-import viewerItem from '../../../resources/images/vendor/unsplash/strat-item.jpg';
+import { VFC } from 'react';
 
-const details = () => (
+const details: VFC<{ viewerItem: string; logo: string }> = ({
+  viewerItem,
+  logo,
+}) => (
   <>
     <div className='details'>
       <div className='details__pricing '>
@@ -10,7 +11,7 @@ const details = () => (
           <h6>Buy now:</h6>
           <h1>$1234.56</h1>
         </div>
-        <img src={logo} alt='logo icon' />
+        <img src={logo} alt='logo icon' height='70px' width='70px' />
       </div>
       <div className='details__perks'>
         <div>
@@ -39,21 +40,29 @@ const details = () => (
           src={viewerItem}
           alt='options item photo'
           className='img-selector'
+          width='112.6px'
+          height='75px'
         />
         <img
           src={viewerItem}
           alt='options item photo'
           className='img-selector'
+          width='112.6px'
+          height='75px'
         />
         <img
           src={viewerItem}
           alt='options item photo'
           className='img-selector'
+          width='112.6px'
+          height='75px'
         />
         <img
           src={viewerItem}
           alt='options item photo'
           className='img-selector'
+          width='112.6px'
+          height='75px'
         />
       </div>
     </div>

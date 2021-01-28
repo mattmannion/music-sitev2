@@ -8,7 +8,12 @@ export default function footer() {
       <footer className='footer'>
         <div className='footer__container'>
           <Link className='footer__logo' to='/'>
-            <img src={logo} alt='Music site logo' />
+            <img
+              src={logo}
+              alt='Music site logo'
+              width='144px'
+              height='144px'
+            />
             <div>Music site</div>
           </Link>
           <div className='footer__hero'>

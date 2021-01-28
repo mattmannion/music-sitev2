@@ -1,8 +1,9 @@
-import React from 'react';
-import viewerItem from '../../../resources/images/vendor/unsplash/strat-item.jpg';
-import mainItem from '../../../resources/images/vendor/unsplash/strat-main.jpg';
+import { VFC } from 'react';
 
-const viewer = () => (
+const viewer: VFC<{ viewerItem: string; mainItem: string }> = ({
+  viewerItem,
+  mainItem,
+}) => (
   <>
     <div className='viewer'>
       <div className='viewer__grid'>
@@ -10,36 +11,48 @@ const viewer = () => (
           src={viewerItem}
           alt='viewer item photo'
           className='img-selector'
+          width='112px'
+          height='75px'
         />
         <img
           src={viewerItem}
           alt='viewer item photo'
           className='img-selector'
+          width='112px'
+          height='75px'
         />
         <img
           src={viewerItem}
           alt='viewer item photo'
           className='img-selector'
+          width='112px'
+          height='75px'
         />
         <img
           src={viewerItem}
           alt='viewer item photo'
           className='img-selector'
+          width='112px'
+          height='75px'
         />
         <img
           src={viewerItem}
           alt='viewer item photo'
           className='img-selector'
+          width='112px'
+          height='75px'
         />
         <img
           src={viewerItem}
           alt='viewer item photo'
           className='img-selector'
+          width='112px'
+          height='75px'
         />
       </div>
     </div>
     <div className='main__item'>
-      <img src={mainItem} alt='main item photo' />
+      <img src={mainItem} alt='main item photo' width='500px' height='750px' />
     </div>
   </>
 );

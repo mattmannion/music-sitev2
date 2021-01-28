@@ -8,7 +8,7 @@ export default function nav() {
       <div className='nav'>
         <nav className='nav-top'>
           <Link className='nav-top__logo' to='/'>
-            <img src={logo} alt='Music-site Logo' />
+            <img src={logo} alt='Music-site Logo' width='50px' height='50px' />
             <div>Music site</div>
           </Link>
           <input
