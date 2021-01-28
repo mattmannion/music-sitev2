@@ -15,6 +15,8 @@ export default function nav() {
             className='nav-top__search'
             type='search'
             placeholder='search'
+            aria-label='Search'
+            title='Search'
           />
           <div>1 (123) 456-7890</div>
           <div className='nav-top__account'>
