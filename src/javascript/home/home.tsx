@@ -19,7 +19,7 @@ const home = () => (
             className='home__photo home__photo-sm'
             src={sale}
             alt='sale photo'
-            width='270px'
+            width='27px'
             height='400px'
           />
         </div>
