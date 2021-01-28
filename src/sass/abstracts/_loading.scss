@@ -1,7 +1,3 @@
-#root,
-#nav,
-#footer,
-#home,
-#product {
+.fade-in-fx {
   @include Fade-In(.5s, .5s);
 }
