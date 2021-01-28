@@ -1,0 +1,7 @@
+#root,
+#nav,
+#footer,
+#home,
+#product {
+  @include Fade-In(.5s, .5s);
+}

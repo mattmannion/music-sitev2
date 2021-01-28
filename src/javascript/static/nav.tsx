@@ -5,7 +5,7 @@ import logo from '../../resources/icons/ms-icon/ms-icon-70x70.png';
 export default function nav() {
   return (
     <>
-      <div className='nav'>
+      <div className='nav' id='nav'>
         <nav className='nav-top'>
           <Link className='nav-top__logo' to='/'>
             <img src={logo} alt='Music-site Logo' width='50px' height='50px' />

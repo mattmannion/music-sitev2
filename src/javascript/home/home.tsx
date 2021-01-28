@@ -3,7 +3,7 @@ import sale from '../../resources/images/vendor/hero-guitar-2-sm.webp';
 
 const home = () => (
   <>
-    <main className='home'>
+    <main className='home' id='home'>
       <div className='home__flex-container'>
         <div className='home__featured'>
           <img

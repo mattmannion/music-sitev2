@@ -10,7 +10,7 @@ import Description from './product-comps/description';
 
 const Product: VFC = () => (
   <>
-    <div className='product'>
+    <div className='product' id='product'>
       <Viewer viewerItem={viewerItem} mainItem={mainItem} />
       <Details viewerItem={viewerItem} logo={logo} />
     </div>

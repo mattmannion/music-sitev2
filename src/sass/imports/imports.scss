@@ -16,6 +16,7 @@
 @import '../abstracts/mixins';
 @import '../abstracts/mq_manager';
 @import '../abstracts/variables';
+@import '../abstracts/loading';
 
 @import '../base/reset';
 @import '../base/typography';
@@ -25,4 +26,3 @@
 
 @import '../pages/home';
 @import '../pages/product';
-@import '../pages/root';

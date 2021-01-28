@@ -5,7 +5,7 @@ import logo from '../../resources/icons/ms-icon/ms-icon-144x144.png';
 export default function footer() {
   return (
     <>
-      <footer className='footer'>
+      <footer className='footer' id='footer'>
         <div className='footer__container'>
           <Link className='footer__logo' to='/'>
             <img
