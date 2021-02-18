@@ -12,8 +12,8 @@
     "parcel:p": "parcel build src/html/index.html --no-source-maps",
     "extras": "cp src/html/_redirects dist/_redirects && cp src/html/sitemap.xml dist/sitemap.xml && cp src/html/robots.txt dist/robots.txt",
     "nord": "cp src/html/sitemap.xml dist/sitemap.xml && cp src/html/robots.txt dist/robots.txt",
-    "gzip:js": "gzip dist/*.js && gzip dist/**/*.js && rm -rf dist/*.js && rm -rf dist/**/*.js ",
-    "gzip:css": "gzip dist/*.css && gzip dist/**/*.css && rm -rf dist/*.css && rm -rf dist/**/*.css ",
+    "gzip:js": "gzip dist/*.js && rm -rf dist/*.js && rm -rf dist/**/*.js ",
+    "gzip:css": "gzip dist/*.css && rm -rf dist/*.css && rm -rf dist/**/*.css ",
     "gzip:html": "gzip dist/*.html && gzip dist/**/*.html && rm -rf dist/*.html && rm -rf dist/**/*.html ",
     "gzip:all": "run-p gzip:js gzip:css gzip:html",
     "start": "run-s rf:d clear parcel:d",
@@ -47,7 +47,10 @@
     "typescript": "^4.1.3"
   },
   "dependencies": {
+    "@cloudinary/base": "^1.0.0-beta.0",
     "@loadable/component": "^5.14.1",
+    "babel-jest": "^26.6.3",
+    "cloudinary-react": "^1.6.8",
     "core-js": "^3.8.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

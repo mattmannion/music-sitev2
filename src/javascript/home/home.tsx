@@ -1,5 +1,14 @@
-import featured from '../../resources/images/vendor/hero-guitar-3-sm.webp';
+import { Image, Video, Transformation } from 'cloudinary-react';
+// import featured from '../../resources/images/vendor/hero-guitar-3-sm.webp';
 import sale from '../../resources/images/vendor/hero-guitar-2-sm.webp';
+
+const featured =
+  'https://ik.imagekit.io/oakzwsyu1x1/hero-guitar-3_8mFWLEFXt.jpg';
+
+const test =
+  ' https://res.cloudinary.com/dtdss7awy/image/upload/v1613329986/sample.jpg ';
+
+const cloudName = 'dtdss7awy';
 
 const home = () => (
   <>
@@ -54,8 +63,27 @@ const home = () => (
           </p>
         </div>
       </div>
+      <div>
+        <Image
+          cloudName={cloudName}
+          publicId='samples/sheep'
+          width='600'
+          crop='scale'
+        />
+        <Video
+          className='home__video'
+          cloudName={cloudName}
+          sourceTypes={['mp4']}
+          controls
+          publicId='samples/sea-turtle'
+          width='600'
+          crop='scale'
+        />
+      </div>
     </main>
   </>
 );
+
+//dtdss7awy
 
 export default home;
