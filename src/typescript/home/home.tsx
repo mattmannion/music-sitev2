@@ -63,27 +63,27 @@ const home = () => (
           </p>
         </div>
       </div>
-      <div>
-        <Image
-          cloudName={cloudName}
-          publicId='samples/sheep'
-          width='600'
-          crop='scale'
-        />
-        <Video
-          className='home__video'
-          cloudName={cloudName}
-          sourceTypes={['mp4']}
-          controls
-          publicId='samples/sea-turtle'
-          width='600'
-          crop='scale'
-        />
-      </div>
     </main>
   </>
 );
 
 //dtdss7awy
 
+// <div>
+//   <Image
+//     cloudName={cloudName}
+//     publicId='samples/sheep'
+//     width='600'
+//     crop='scale'
+//   />
+//   <Video
+//     className='home__video'
+//     cloudName={cloudName}
+//     sourceTypes={['mp4']}
+//     controls
+//     publicId='samples/sea-turtle'
+//     width='600'
+//     crop='scale'
+//   />
+// </div>
 export default home;
